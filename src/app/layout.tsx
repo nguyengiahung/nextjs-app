@@ -3,7 +3,8 @@ import localFont from 'next/font/local';
 import { Inter as FontSans } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
-
+import envConfig from '../../config';
+console.log(envConfig);
 const fontSans = FontSans({
   subsets: ['latin'],
   variable: '--font-sans' // Define a CSS variable name
