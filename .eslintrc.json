@@ -1,7 +1,27 @@
 {
+  "parser": "@typescript-eslint/parser",
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
-    "plugin:@tanstack/query/recommended"
-  ]
+    "plugin:@tanstack/query/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "all",
+        "argsIgnorePattern": "^_",
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ]
+  }
 }

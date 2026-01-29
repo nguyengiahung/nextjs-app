@@ -11,7 +11,7 @@ const configProject = configSchema.safeParse({
 });
 
 if (!configProject.success) {
-  console.error(configProject.error.errors);
+  console.error(configProject.error);
   throw new Error('Cac khai bao bien moi truong ko hop le!!!');
 }
 
